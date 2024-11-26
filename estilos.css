@@ -1,0 +1,218 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to bottom, #ecebebd0, #000000);
+    color: #fff;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+/* Cabecera */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #000;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.main-header .logo h1 a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.main-nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+.main-nav ul li a:hover {
+    color: #fffefe;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 100vh;
+    background: url('nevados.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    background-attachment: fixed;
+}
+
+/* Overlay para oscurecer la imagen */
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Aumenta la opacidad para mejorar el contraste */
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-content h2 {
+    font-size: 4vw;
+    margin-bottom: 20px;
+    color: #fff;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+}
+
+.hero-content p {
+    font-size: 1.5vw;
+    margin-bottom: 30px;
+    color: #fff;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+}
+
+.btn-hero {
+    background-color: #ff6600;
+    padding: 15px 30px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-hero:hover {
+    background-color: #ff4500;
+}
+
+/* Sección de destinos */
+.destinos {
+    padding: 50px 20px;
+    background-color: transparent;
+}
+
+.destinos h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.destino {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #333;
+    padding-bottom: 30px;
+    gap: 20px;
+    flex-wrap: wrap; /* Hace que el contenido se ajuste en pantallas pequeñas */
+}
+
+.destino img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.destino-info {
+    text-align: center;
+    flex: 1;
+}
+
+.destino-info h3 {
+    font-size: 24px;
+    color: #ffffff;
+}
+
+.destino-info p {
+    font-size: 16px;
+}
+
+/* Sección de mapa */
+.mapa {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.mapa iframe {
+    display: block;
+    margin: auto;
+    border: 10px solid #f0a3a3;
+    width: 80%;
+    height: 450px;
+    max-width: 600px;
+}
+
+/* Sección de contacto */
+.contacto {
+    padding: 50px 20px;
+    background-color: #222;
+    text-align: center;
+}
+
+.contacto h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+#contacto-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+#contacto-form input, #contacto-form textarea {
+    width: 80%;
+    max-width: 500px;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+#contacto-form button {
+    background-color: #ff6600;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contacto-form button:hover {
+    background-color: #ff4500;
+}
+
+/* Pie de página */
+footer {
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+}

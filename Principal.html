@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Descubre los mejores destinos turísticos en la región de Áncash, Perú. Aventura, naturaleza y cultura te esperan en la Cordillera Blanca y más.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turismo en Áncash - Descubre lo Increíble</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header">
+        <div class="logo">
+            <h1><a href="#inicio">Áncash</a></h1>
+        </div>
+        <nav class="main-nav" aria-label="Menú principal">
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#destinos">Destinos</a></li>
+                <li><a href="#mapa">Mapa</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero" role="banner" aria-labelledby="hero-title">
+            <div class="hero-content">
+                <h2 id="hero-title">Descubre Áncash</h2>
+                <p>Aventúrate en la majestuosidad de la Cordillera Blanca y las misteriosas ruinas de Chavín de Huántar.</p>
+                <a href="#destinos" class="btn-hero">Ver Destinos</a>
+            </div>
+        </section>
+
+        <section id="destinos" class="destinos">
+            <h2>Principales Atracciones de Áncash</h2>
+            <div class="destino">
+                <img src="Huaraz.jpg" alt="Vista panorámica de Huaraz, ciudad rodeada de picos nevados">
+                <div class="destino-info">
+                    <h3>Huaraz</h3>
+                    <p>La capital de la aventura en los Andes, rodeada de impresionantes picos nevados y lagunas.</p>
+                </div>
+            </div>
+            <div class="destino">
+                <img src="img/Chavin.jpg" alt="Ruinas arqueológicas de Chavín de Huántar">
+                <div class="destino-info">
+                    <h3>Chavín de Huántar</h3>
+                    <p>Un sitio arqueológico que fue el centro religioso y cultural de la civilización Chavín.</p>
+                </div>
+            </div>
+            <div class="destino">
+                <img src="Laguna69.png" alt="Laguna 69, con aguas cristalinas y rodeada de montañas nevadas">
+                <div class="destino-info">
+                    <h3>Laguna 69</h3>
+                    <p>Una de las lagunas más hermosas del Perú, ubicada al pie del nevado Chacraraju.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="mapa" class="mapa">
+            <h2>Explora Áncash en el Mapa</h2>
+            <div id="mapa"></div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1007549.7624826939!2d-77.93498215354069!3d-9.44407352418028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91a968e71c2b62cf%3A0x9df6bbc58a7f9fae!2sAncash!5e0!3m2!1sen!2spe!4v1725476461716!5m2!1sen!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+
+        <section id="contacto" class="contacto">
+            <h2>Contáctanos</h2>
+            <form id="contacto-form">
+                <input type="text" id="nombre" name="nombre" placeholder="Tu Nombre" aria-label="Nombre" required>
+                <input type="email" id="email" name="email" placeholder="Tu Correo" aria-label="Correo electrónico" required>
+                <textarea id="mensaje" name="mensaje" placeholder="Tu Mensaje" aria-label="Mensaje" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Turismo en Áncash. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="diseño.js"></script>
+</body>
+</html>
